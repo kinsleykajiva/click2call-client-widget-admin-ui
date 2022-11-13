@@ -22,9 +22,13 @@ still requires more touch up and the UI part of the , most of the ticketing API 
 Checklist to make the demo run:
 
 -[X] https://github.com/kinsleykajiva/click2call-main-messages-service-version-2
+
 -[X] https://github.com/kinsleykajiva/click2call-cron-job-service 
+
 -[X] https://github.com/kinsleykajiva/click2call-Eurekadiscovery-service
+
 - [X] https://github.com/kinsleykajiva/click2call-gatewayproxy-service
+
 - [X] https://github.com/kinsleykajiva/click2call-ticketing-service
 
 
