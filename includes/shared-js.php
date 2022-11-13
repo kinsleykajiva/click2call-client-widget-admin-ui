@@ -1,0 +1,11 @@
+<script src="js/jquery.js"></script>
+<script src="js/jquery.mark.min.js"></script>
+<script src="js/iziToast/iziToast.min.js"></script>
+<script src="js/izModalModal/iziModal.min.js"></script>
+<script src="js/accounting.js"></script>
+<script src="js/axios.min.js"></script>
+<script src="js/js.cookie.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/blockUI.js"></script>
+<script src="js/app.js"></script>
+<script src="js/customeBase.js"></script>

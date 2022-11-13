@@ -1,0 +1,39 @@
+RewriteEngine On
+#RewriteBase /
+
+# Set the default handler.
+#DirectoryIndex index.php
+
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+ErrorDocument 401 /error?n=401
+ErrorDocument 404 /error.php
+ErrorDocument 403 /error?n=403
+ErrorDocument 500 /error?n=500
+ErrorDocument 502 /error?n=502
+
+RewriteEngine on
+RewriteCond %{THE_REQUEST} /([^.]+)\.php [NC]
+RewriteRule ^ /%1 [NC,L,R]
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^ %{REQUEST_URI}.php [NC,L]
+
+AddType application/octet-stream .csv
+AddType application/octet-stream .xls
+AddType application/octet-stream .doc
+AddType application/octet-stream .avi
+AddType application/octet-stream .mpg
+AddType application/octet-stream .mov
+AddType application/octet-stream .pdf
+
+# disable directory browsing
+Options All -Indexes
+
+AddDefaultCharset UTF-8
+DefaultLanguage en-GB
+
+RewriteEngine on
+RewriteRule ^view-(.*)$ viewing.php?fetch=$1
+RewriteRule ^-(.*)$ index.php?fetch=$1
